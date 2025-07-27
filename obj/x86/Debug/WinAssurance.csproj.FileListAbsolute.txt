@@ -1,0 +1,30 @@
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\bin\Debug\WinAssurance.exe
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\bin\Debug\WinAssurance.pdb
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Form1.resources
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Properties.Resources.resources
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.exe
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.pdb
+c:\documents and settings\administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Menup.resources
+C:\Documents and Settings\Administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_client.resources
+C:\Documents and Settings\Administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\bin\Debug\WinAssurance.exe.config
+C:\Documents and Settings\Administrateur\mes documents\visual studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Frm_Assurance.resources
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_plainte.resources
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_view_client.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\bin\Debug\WinAssurance.exe.config
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\bin\Debug\WinAssurance.exe
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\bin\Debug\WinAssurance.pdb
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Form1.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Frm_Assurance.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_client.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_plainte.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.frm_view_client.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Menup.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.Properties.Resources.resources
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.exe
+C:\Users\HP\Downloads\54301-1370895-gestion-des-assurance-de-clients\WinAssurance\WinAssurance\obj\x86\Debug\WinAssurance.pdb

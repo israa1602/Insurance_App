@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="BDassurance" Class="AssuranceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAMA\SQLEXPRESS;Initial Catalog=BDassurance;Integrated Security=True;Pooling=False" SettingsObjectName="WinAssurance.Properties.Settings" SettingsPropertyName="BDassuranceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Assurance" Member="Assurance">
+    <Type Name="Assurance">
+      <Column Name="NumAss" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LibAss" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CodeLivr" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Numcli" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Date_livraison_Assurance" Member="Date_livraison" ThisKey="CodeLivr" OtherKey="CodeLivr" Type="Date_livraison" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categorie_client" Member="Categorie_client">
+    <Type Name="Categorie_client">
+      <Column Name="CodeCateg" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LibCateg" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Categorie_client_Client" Member="Client" ThisKey="CodeCateg" OtherKey="CodeCateg" Type="Client" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categorie_Plainte" Member="Categorie_Plainte">
+    <Type Name="Categorie_Plainte">
+      <Column Name="CodeCategpl" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LibCategPl" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Association Name="Categorie_Plainte_Plainte" Member="Plainte" ThisKey="CodeCategpl" OtherKey="codecategPl" Type="Plainte" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Client" Member="Client">
+    <Type Name="Client">
+      <Column Name="Numcli" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Postnom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sexe" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Jrnaiss" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="MsNaiss" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AnNaiss" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Rue" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NumRue" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Quartier" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Commune" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Nationalite" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CodeCateg" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Client_Facturation" Member="Facturation" ThisKey="Numcli" OtherKey="Numcli" Type="Facturation" />
+      <Association Name="Categorie_client_Client" Member="Categorie_client" ThisKey="CodeCateg" OtherKey="CodeCateg" Type="Categorie_client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Date_livraison" Member="Date_livraison">
+    <Type Name="Date_livraison">
+      <Column Name="CodeLivr" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jrlivr" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="MsLivr" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AnLivr" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Association Name="Date_livraison_Assurance" Member="Assurance" ThisKey="CodeLivr" OtherKey="CodeLivr" Type="Assurance" />
+      <Association Name="Date_livraison_Facturation" Member="Facturation" ThisKey="CodeLivr" OtherKey="CodeLivr" Type="Facturation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dossier" Member="Dossier">
+    <Type Name="Dossier">
+      <Column Name="CodeDossier" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="libDoss" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Jrdoss" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="MsDoss" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="AnDoss" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Codepl" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Plainte_Dossier" Member="Plainte" ThisKey="Codepl" OtherKey="Codepl" Type="Plainte" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Facturation" Member="Facturation">
+    <Type Name="Facturation">
+      <Column Name="NumFact" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="libFact" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Numcli" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CodeLivr" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Client_Facturation" Member="Client" ThisKey="Numcli" OtherKey="Numcli" Type="Client" IsForeignKey="true" />
+      <Association Name="Date_livraison_Facturation" Member="Date_livraison" ThisKey="CodeLivr" OtherKey="CodeLivr" Type="Date_livraison" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Presentation_Pliante" Member="Presentation_Pliante">
+    <Type Name="Presentation_Pliante">
+      <Column Name="CodePres" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LibPres" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="NumCli" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Codepl" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Plainte_Presentation_Pliante" Member="Plainte" ThisKey="Codepl" OtherKey="Codepl" Type="Plainte" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Plainte" Member="Plainte">
+    <Type Name="Plainte">
+      <Column Name="Codepl" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jrpl" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Mspl" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="Anpl" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="codecategPl" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="Plainte_Dossier" Member="Dossier" ThisKey="Codepl" OtherKey="Codepl" Type="Dossier" />
+      <Association Name="Plainte_Presentation_Pliante" Member="Presentation_Pliante" ThisKey="Codepl" OtherKey="Codepl" Type="Presentation_Pliante" />
+      <Association Name="Categorie_Plainte_Plainte" Member="Categorie_Plainte" ThisKey="codecategPl" OtherKey="CodeCategpl" Type="Categorie_Plainte" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
